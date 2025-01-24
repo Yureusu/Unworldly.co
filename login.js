@@ -29,7 +29,7 @@ submit.addEventListener('click', function (event){
     // Signed in 
     const user = userCredential.user;
     alert('Signed In!')
-    window.location.replace('index.html');
+    window.location.replace('signedin.html');
     // ...
     })
     .catch((error) => {
@@ -37,7 +37,5 @@ submit.addEventListener('click', function (event){
     const errorMessage = error.message;
     alert('Incorrect Email or Password!')
     });
-
-    
 
 });
