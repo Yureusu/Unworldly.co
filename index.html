@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unworldly</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" style="font-size: 60px;" type="image/x-icon" href="assets/WebLogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="header">
+        <a onclick="Cart()" id="cart" style="text-decoration: none;"><i class="fa-solid fa-cart-shopping" style="padding-right: 6px;"></i>Cart</a>
+        <a href="form.html" id="account" style="text-decoration: none;">Login or Create Account</a>
+        <div id="header-space"></div>
+        <a href="" id="new-arrival" style="text-decoration: none;"><i class="fa-solid fa-star-of-life" style="padding-right: 6px;"></i>The New Collection Has Landed!</a>
+    </div>
+    <div class="brand">
+        <img id="brandname" src="UnworldlyBrandW.png"></img>
+    </div>
+    <div id="category-nav">
+        <span id="new" onclick="New()">New!</span>
+        <span id="clothing" onclick="Clothing()">Clothing</span>
+        <span id="posters" onclick="Posters()">Posters</span>
+        <span id="newsLetter" onclick="Newsletter()">NewsLetter</span>
+        <span id="contact" onclick="Contact()">Contact</span>
+        <span id="about" onclick="About()">About</span>
+    </div>
+    <div class="content">
+        <div id="content-slide"></div>
+        <div id="news">
+            <h2>Join the newsletter for 10% off your first order + exclusive offers and updates!</h2>
+            <a href="" id="news-letter" style="text-decoration: none;">Subscribe Now</a>
+        </div>
+        <div id="text">
+            <br><h2>Sign up for SMS text offers and updates!</h2>
+            <a href="" id="text-letter" style="text-decoration: none;">Join Now</a>
+        </div>
+        <div id="artist-info">
+            <h2>Artist Owned & Operated</h2>
+            <h4>Unworldly is a personal art shop featuring grunge, scripture zines and aeshetic designs.</h4>
+            <h4>100% Original and Locally Handmade!</h4>
+            <a href="" style="text-decoration: none;">Join the newsletter for 10% off Click Here...</a>
+        </div>
+        <div id="category-container">
+            <div id="classic"></div>
+            <div id="classic-nav">
+                <h2>Unworldly Classics!</h2>
+                <a href="" style="text-decoration: none;">Discover</a>
+            </div>
+            <div id="new-designs"></div>
+            <div id="newdesigns-nav">
+                <h2>New Collection!</h2>
+                <a href="" style="text-decoration: none;">Discover</a>
+            </div>
+        </div>
+        <div id="new-collection-title">
+            <i class="fa-solid fa-star-of-life" style="padding-right: 6px;"></i>
+            <h2>The New Collection Has Landed</h2>
+            <i class="fa-solid fa-star-of-life" style="padding-left: 6px;"></i>
+        </div>
+        <div id="new-posters">
+            <a href="" id="poster1" style="text-decoration: none;"></a>
+            <a href="" id="poster2" style="text-decoration: none;"></a>
+            <a href="" id="poster3" style="text-decoration: none;"></a>
+            <a href="" id="poster4" style="text-decoration: none;"></a>
+        </div>
+        <div id="new-posters-info">
+            <a href="" id="poster1-info" style="text-decoration: none;">
+                <h4>Cosmic Vision Poster</h4>
+                <h5>₱150</h5>
+            </a>
+            <a href="" id="poster2-info" style="text-decoration: none;">
+                <h4>Defy The Odds Poster</h4>
+                <h5>₱150</h5>
+            </a>
+            <a href="" id="poster3-info" style="text-decoration: none;">
+                <h4>Chin Up, Fangs Out Poster</h4>
+                <h5>₱150</h5>
+            </a>
+            <a href="" id="poster4-info" style="text-decoration: none;">
+                <h4>Magic Hour Poster</h4>
+                <h5>₱150</h5>
+            </a>
+        </div>
+        <div id="content-slide2"></div>
+        <div id="free-shipping">
+            <h2>Free Shipping For Your 1st Purchase!</h2>
+            <a href="" id="free-shipping-letter" style="text-decoration: none;">Shop Now</a>
+        </div>
+        <div id="design-info">
+            <h2>We Have New Designs Every Week!</h2>
+            <a href="" id="design-info-letter" style="text-decoration: none;">Notify Me</a>
+        </div>
+        <div id="new-collection-title">
+            <i class="fa-solid fa-star-of-life" style="padding-right: 6px;"></i>
+            <h2>Classic Tees Are Back</h2>
+            <i class="fa-solid fa-star-of-life" style="padding-left: 6px;"></i>
+        </div>
+        <div id="new-tees">
+            <a href="" id="tee1" style="text-decoration: none;"></a>
+            <a href="" id="tee2" style="text-decoration: none;"></a>
+            <a href="" id="tee3" style="text-decoration: none;"></a>
+            <a href="" id="tee4" style="text-decoration: none;"></a>
+        </div>
+        <div id="new-tees-info">
+            <a href="" id="tee1-info" style="text-decoration: none;">
+                <h4>MTMTE T-shirt</h4>
+                <h5>₱349</h5>
+            </a>
+            <a href="" id="tee2-info" style="text-decoration: none;">
+                <h4>Unworldly Logo T-shirt</h4>
+                <h5>₱349</h5>
+            </a>
+            <a href="" id="tee3-info" style="text-decoration: none;">
+                <h4>Unworldly King</h4>
+                <h5>₱349</h5>
+            </a>
+            <a href="" id="tee4-info" style="text-decoration: none;">
+                <h4>Unworldly Queen</h4>
+                <h5>₱349</h5>
+            </a>
+        </div>
+        <span onclick="ViewMore()" id="view-more">View More</span>
+    </div>
+    <div class="footer">
+        <div id="tab1">
+            <h4>Follow Us</h3>
+            <a href="https://www.facebook.com/" style="text-decoration: none; color: white;">
+                <i class="fa-brands fa-facebook" style="margin-right: 12px;"></i>Facebook
+            </a>
+            <a href="https://www.instagram.com/" style="text-decoration: none; color: white;">
+                <i class="fa-brands fa-instagram" style="margin-right: 12px;"></i>Instagram
+            </a>
+            <a href="https://www.x.com/" style="text-decoration: none; color: white;">
+                <i class="fa-brands fa-twitter" style="margin-right: 12px;"></i>Twitter
+            </a>
+            <a href="https://www.pinterest.com/" style="text-decoration: none; color: white;">
+                <i class="fa-brands fa-pinterest" style="margin-right: 12px;"></i>Pinterest
+            </a>
+            <a href="https://www.github.com/" style="text-decoration: none; color: white;">
+                <i class="fa-brands fa-github" style="margin-right: 12px;"></i>Github
+            </a>
+        </div>
+        <div id="tab2">
+            <img id="footer-logo" src="UnworldlyLogoW.png" alt="">
+            <img id="footer-brand" src="UnworldlyBrandW.png" alt="">
+            <h4 style="color: white; font-weight: normal; font-size: 14px; margin-top: 12px;">Copyright © 2025, Unworldly. <br>This store is PCI Compliant</h4>
+        </div>
+        <div id="tab3">
+            <h4>Shop</h4>
+            <a href="" style="text-decoration: none; color: white;">Contact Shop</a>
+            <a href="" style="text-decoration: none; color: white;">Size Guides</a>
+            <a href="" style="text-decoration: none; color: white;">Return & Refund Policy</a>
+            <a href="" style="text-decoration: none; color: white;">Terms Of Service</a>
+            <a href="" style="text-decoration: none; color: white;">Privacy Policy</a>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

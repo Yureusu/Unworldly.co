@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: white;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header a{
+    color: black; 
+    cursor: pointer;
+    font-size: 14px;
+}
+#new-arrival{
+    margin-right: 12px;
+    justify-self: flex-end;
+}
+#new-arrival:hover{
+    color: tomato;
+}
+#account{
+    margin-left: 12px;
+}
+#account:hover{
+    transition: 0.3s ease-in-out;
+    color: tomato;
+}
+#cart{
+    margin-left: 12px;
+}
+#cart:hover{
+    color: tomato;
+}
+#header-space{
+    flex: 1;
+}
+.brand{
+    background-color: #222831;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#brandname{
+    height: 80px;
+    width: 240px;
+    cursor: pointer;
+}
+.form-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-block: 12px;
+}
+/*signup*/
+#signup-form, #login-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 64px;
+    gap: 12px;
+}
+#signup-form h3, #login-form h3{
+    font-size: 32px;
+    color: black;
+    font-weight: 500;
+    align-self: flex-start;
+    padding-block: 12px;
+}
+#signup-form h6, #login-form h6{
+    font-size: 12px;
+    color: black;
+    font-weight: normal;
+}
+#loginswitch, #signupswitch{
+    font-size: 12px;
+    color: tomato;
+    cursor: pointer;
+}
+#signup-form input, #login-form input{
+    border: none;
+    outline: none;
+    padding: 9px;
+    width: 260px;
+    font-size: 14px;
+    position: relative;
+    background-color: #E4E0E1;
+}
+#signup-form input::-webkit-input-placeholder,
+#login-form input::-webkit-input-placeholder{
+    font-size: 14px;
+    opacity: calc(50%);
+}
+#signup-form input:focus-within,
+#login-form input:focus-within{
+    border-bottom: 1px solid black;
+}
+#signup-form input:focus-within::-webkit-input-placeholder,
+#login-form input:focus-within::-webkit-input-placeholder{
+    color: #E4E0E1;
+}
+#signup-btn, #login-btn{
+    border: none;
+    outline: none;
+    background-color: black;
+    color: white;
+    width: 260px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 14px;
+}
+#signup-btn:hover, #login-btn:hover{
+    background-color: tomato;
+    color: white;
+}
+/*login*/
+#login-form{
+    display: none;
+}
+/*image*/
+#image-container{
+    height: 500px;
+    width: 500px;
+    background-image: url('FangsOut.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}

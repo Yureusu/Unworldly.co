@@ -1,0 +1,549 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: white;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header{
+    background-color: white;
+    height: 50px;
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.header a{
+    color: black; 
+    cursor: pointer;
+    font-size: 14px;
+}
+#new-arrival{
+    margin-right: 12px;
+    justify-self: flex-end;
+}
+#new-arrival:hover{
+    color: tomato;
+}
+#account{
+    margin-left: 12px;
+}
+#account:hover{
+    transition: 0.3s ease-in-out;
+    color: tomato;
+}
+#cart{
+    margin-left: 12px;
+}
+#cart:hover{
+    color: tomato;
+}
+#header-space{
+    flex: 1;
+}
+.brand{
+    background-color: #222831;
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#brandname{
+    height: 80px;
+    width: 240px;
+    cursor: pointer;
+}
+#category-nav span{
+    color: black;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 400;
+}
+#category-nav span:hover{
+    color: tomato;
+}
+.content{
+    background-color: white;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#content-slide{
+    background-color: salmon;
+    height: 500px;
+    width: 90%;
+    margin-top: 12px;
+    background-image: url('FangsOutSlide.png');
+    background-repeat: no-repeat;
+    background-size: 1000px 100%;
+    background-position: center;
+    filter: saturate(200%);
+    filter: brightness(70%);
+}
+#news{
+    width: 540px;
+    height: auto;
+    top: 400px;
+    left: 100px;
+    color: white;
+    position: absolute;
+}
+#news h2{
+    margin-bottom: 20px;
+}
+#news-letter{
+    background-color: black;
+    padding: 12px;
+    color: white;
+}
+#news-letter:hover{
+    padding: 13px;
+    color: black;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+#text{
+    width: 540px;
+    height: auto;
+    top: 400px;
+    right: 100px;
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+#text h2{
+    margin-bottom: 20px;
+}
+#text-letter{
+    background-color: black;
+    text-align: right;
+    padding: 12px;
+    color: white;
+}
+#text-letter:hover{
+    padding: 13px;
+    color: black;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+#artist-info{
+    width: 60%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+#artist-info h2{
+    font-weight: normal;
+}
+#artist-info h4{
+    font-weight: normal;
+}
+#artist-info a{
+    color: black; 
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 18px;
+}
+#artist-info a:hover{
+    color: tomato;
+}
+
+#category-container{
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;   
+    margin-block: -12px;
+}
+#classic{
+    flex: 1;
+    height: 450px;
+    background-image: url('UnworldlyBTee.png');
+    background-repeat: no-repeat;
+    background-size: 95% 90%;
+    background-position: center;
+    cursor: pointer;
+    filter: brightness(70%);
+}
+#classic:hover{
+    filter: brightness(100%);
+    transition: 0.3s ease-in-out;
+}
+#classic-nav{
+    width: 540px;
+    height: auto;
+    top: 1050px;
+    left: 200px;
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+#classic-nav h2{
+    margin-bottom: 20px;
+}
+#classic-nav a{
+    background-color: black;
+    width: 70px;
+    padding: 12px;
+    color: white;
+}
+#classic-nav a:hover{
+    padding: 13px;
+    color: black;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+#new-designs{
+    flex: 1;
+    height: 450px;
+    background-image: url('UnderDogWTee.png');
+    background-repeat: no-repeat;
+    background-size: 95% 90%;
+    background-position: center;
+    cursor: pointer;
+    filter: brightness(70%);
+}
+#new-designs:hover{
+    filter: brightness(100%);
+    transition: 0.3s ease-in-out;
+}
+#newdesigns-nav{
+    width: 540px;
+    height: auto;
+    top: 1050px;
+    left: 750px;
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+#newdesigns-nav h2{
+    margin-bottom: 20px;
+}
+#newdesigns-nav a{
+    background-color: black;
+    width: 70px;
+    padding: 12px;
+    color: white;
+}
+#newdesigns-nav a:hover{
+    padding: 13px;
+    color: black;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+#category-nav{
+    height: 40px;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 12px;
+}
+#new-collection-title{
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#new-collection-title h2{
+    font-weight: normal;
+    font-size: 20px;
+}
+#new-collection-title i{
+    font-size: 14px;
+}
+#new-posters{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 12px;
+    padding: 12px;
+}
+#poster1, #poster2, #poster3, #poster4{
+    height: 250px;
+    width: 250px;
+}
+#poster1:hover, #poster2:hover, #poster3:hover, #poster4:hover{
+    filter: brightness(90%);
+    transition: 0.3s ease-in-out;
+}
+#poster1{
+    background-image: url('Cosmic.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    cursor: pointer;
+    filter: brightness(100%);
+}
+#poster2{
+    background-image: url('DefyOdds.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    cursor: pointer;
+    filter: brightness(100%);
+}
+#poster3{
+    background-image: url('FangsOut.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    cursor: pointer;
+    filter: brightness(100%);
+}
+#poster4{
+    background-image: url('MagicHour.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    cursor: pointer;
+    filter: brightness(100%);
+}
+#new-posters-info{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 12px;
+    margin-top: -12px;
+}
+#poster1-info, #poster2-info, #poster3-info, #poster4-info{
+    width: 250px;
+    text-align: center;
+    color: black;
+    padding: 12px;
+}
+#poster1-info h4, #poster2-info h4, #poster3-info h4, #poster4-info h4{
+    font-weight: 600;
+}
+#poster1-info h5, #poster2-info h5, #poster3-info h5, #poster4-info h5{
+    font-weight: normal;
+}
+#poster1-info:hover, #poster2-info:hover, #poster3-info:hover, #poster4-info:hover{
+    color: tomato;
+}
+#content-slide2{
+    background-color: #E9967A;
+    height: 500px;
+    width: 90%;
+    margin-block: 12px;
+    background-image: url('DefyOddsSlide.png');
+    background-repeat: no-repeat;
+    background-size: 1000px 100%;
+    background-position: center;
+    filter: saturate(200%);
+    filter: brightness(70%);
+}
+#free-shipping{
+    width: 540px;
+    height: auto;
+    top: 1900px;
+    left: 100px;
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+#free-shipping h2{
+    margin-bottom: 20px;
+}
+#free-shipping-letter{
+    background-color: black;
+    width: 80px;
+    padding: 12px;
+    color: white;
+}
+#free-shipping-letter:hover{
+    padding: 12px;
+    color: black;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+#design-info{
+    width: 540px;
+    height: auto;
+    top: 1900px;
+    right: 100px;
+    color: white;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+#design-info h2{
+    margin-bottom: 20px;
+}
+#design-info-letter{
+    background-color: black;
+    width: 75px;
+    padding: 12px;
+    color: white;
+}
+#design-info-letter:hover{
+    padding: 12px;
+    color: black;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+}
+
+#new-tees{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 12px;
+    padding: 12px;
+}
+#tee1, #tee2, #tee3, #tee4{
+    height: 250px;
+    width: 250px;
+}
+#tee1:hover, #tee2:hover, #tee3:hover, #tee4:hover{
+    filter: brightness(90%);
+    transition: 0.3s ease-in-out;
+}
+#tee1{
+    background-image: url('MTMTEWTee.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    cursor: pointer;
+    filter: brightness(100%);
+}
+#tee2{
+    background-image: url('UnworldlyLogoBTee.png');
+    background-repeat: no-repeat;
+    background-size: 130% 130%;
+    background-position: center;
+    cursor: pointer;
+    filter: brightness(100%);
+}
+#tee3{
+    background-image: url('KingWTee.png');
+    background-repeat: no-repeat;
+    background-size: 130% 130%;
+    background-position: center;
+    cursor: pointer;
+    filter: brightness(100%);
+}
+#tee4{
+    background-image: url('QueenWTee.jpg');
+    background-repeat: no-repeat;
+    background-size: 130% 130%;
+    background-position: center;
+    cursor: pointer;
+    filter: brightness(100%);
+}
+#new-tees-info{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 12px;
+    margin-top: -12px;
+}
+#tee1-info, #tee2-info, #tee3-info, #tee4-info{
+    width: 250px;
+    text-align: center;
+    color: black;
+    padding: 12px;
+}
+#tee1-info h4, #tee2-info h4, #tee3-info h4, #tee4-info h4{
+    font-weight: 600;
+}
+#tee1-info h5, #tee2-info h5, #tee3-info h5, #tee4-info h5{
+    font-weight: normal;
+}
+#tee1-info:hover, #tee2-info:hover, #tee3-info:hover, #tee4-info:hover{
+    color: tomato;
+}
+#view-more{
+    cursor: pointer;
+    padding: 12px;
+    background-color: black;
+    color: white;
+    margin-bottom: 24px;
+}
+#view-more:hover{
+    background-color: tomato;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.footer{
+    background-color: black;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#tab1, #tab2, #tab3{
+    height: 300px;
+    width: 300px;
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+#tab2{
+    padding: 12px;
+}
+#tab1 h4, #tab3 h4{
+    width: 200px;
+    color: white;
+    font-size: 18px;
+}
+#tab1 a, #tab3 a{
+    width: 200px;
+    font-size: 16px;
+    color: white;
+}
+#tab1 a:hover, #tab3 a:hover{
+    color: tomato;
+}
+#footer-logo{
+    height: 200px;
+    width: 200px;
+}
+#footer-brand{
+    height: 80px;
+    width: 200px;
+    margin-top: -24px;
+}
