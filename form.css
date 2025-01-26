@@ -33,17 +33,14 @@ body{
 #new-arrival:hover{
     color: tomato;
 }
-#account{
+#back-btn{
     margin-left: 12px;
+    cursor: pointer;
 }
-#account:hover{
-    transition: 0.3s ease-in-out;
-    color: tomato;
+#back-btn i{
+    font-size: 15px;
 }
-#cart{
-    margin-left: 12px;
-}
-#cart:hover{
+#back-btn:hover{
     color: tomato;
 }
 #header-space{
@@ -141,7 +138,129 @@ body{
 #image-container{
     height: 500px;
     width: 500px;
-    background-image: url('FangsOut.png');
+    background-image: url('assets/fangs-out.png');
     background-repeat: no-repeat;
     background-size: cover;
+}
+/*footer*/
+.footer{
+    background-color: black;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#footer-img-wrapper{
+    display: flex;
+    border: 1px solid white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+    padding-bottom: 12px;
+}
+#footer-img{
+    height: 100px;
+    width: 400px;
+    background-color: white;
+    background-image: url('assets/brand-b.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    cursor: pointer;
+    margin: 12px;
+}
+#tab1, #tab2, #tab3{
+    height: 300px;
+    width: 300px;
+    margin: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+}
+#tab1, #tab2{
+    border-right: 1px solid white;
+}
+#tab1{
+    flex: 2;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px;
+}
+#tab1 h4{
+    font-weight: normal;
+    cursor: pointer;
+}
+#tab1 h4:hover{
+    color: tomato;
+}
+#tab2, #tab3{
+    flex: 1;
+    font-size: 14px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px;
+}
+#tab2 h4, #tab3 h4{
+    width: 200px;
+    color: white;
+    font-size: 18px;
+}
+#tab2 a, #tab3 a{
+    width: 200px;
+    font-size: 14px;
+    color: white;
+}
+#tab2 a:hover, #tab3 a:hover{
+    color: tomato;
+}
+/*popup*/
+#popup-container{
+    background-color: white;
+    height: 420px;
+    width: 420px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+    position: absolute;
+    z-index: 2;
+    top: 25%;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .3);
+}
+#popup-img{
+    height: 240px;
+    width: 240px;
+    background-image: url('assets/double-check.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#popup-container h3{
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 12px;
+}
+#close-btn{
+    margin-top: 12px;
+    padding: 12px;
+    color: white;
+    background-color: black;
+    margin-bottom: 12px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+.dim{
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .3);
 }

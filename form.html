@@ -7,21 +7,25 @@
     <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
     <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.css" />
     <title>Signup/Login</title>
-    <link rel="icon" type="image/x-icon" href="web-logo.png">
+    <link rel="icon" type="image/x-icon" href="assets/web-logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    <div id="popup-container">
+        <div id="popup-img"></div>
+        <h3>Thanks! your account has been successfully loged in.</h3>
+        <span onclick="closeBtn()" id="close-btn">Shop Now</span>
+    </div>
     <div class="header">
-        <span onclick="Cart()" id="cart" style="text-decoration: none;"><i class="fa-solid fa-cart-shopping" style="padding-right: 6px;"></i>Cart</span>
-        <a href="" id="account" style="text-decoration: none;">Login or Create Account</a>
+        <a href="index.html" id="back-btn" style="text-decoration: none;"><i class="fa-solid fa-circle-chevron-left" style="padding-right: 6px;"></i>Go Back</a>
         <div id="header-space"></div>
         <a href="" id="new-arrival" style="text-decoration: none;"><i class="fa-solid fa-star-of-life" style="padding-right: 6px;"></i>The New Collection Has Landed!</a>
     </div>
     <div class="brand">
-        <img id="brandname" src="UnworldlyBrandW.png"></img>
+        <img id="brandname" src="assets/brand-name.png"></img>
     </div>
     <div class="form-container">
         <form action="" id="signup-form">
@@ -39,6 +43,31 @@
             <h6>Don't have an account? <span onclick="signupswitch()" id="signupswitch">Sign up here</span></h6>
         </form>
         <div id="image-container"></div>
+    </div>
+    <div class="footer">
+        <div id="tab1">
+            <div id="footer-img-wrapper">
+                <div id="footer-img"></div>
+                <h3>JOIN THE UNWORLDLY ERA</h3>
+            </div>
+            <h4>Copyright © 2025, Unworldly. This store is PCI Compliant.</h4>
+        </div>
+        <div id="tab2">
+            <h4>Follow Us</h3>
+            <a href="https://www.facebook.com/" style="text-decoration: none;">Facebook</a>
+            <a href="https://www.instagram.com/" style="text-decoration: none;">Instagram</a>
+            <a href="https://www.x.com/" style="text-decoration: none;">Twitter</a>
+            <a href="https://www.pinterest.com/" style="text-decoration: none;">Pinterest</a>
+            <a href="https://www.github.com/" style="text-decoration: none;">Github</a>
+        </div>
+        <div id="tab3">
+            <h4>Shop</h4>
+            <a href="" style="text-decoration: none;">Contact Shop</a>
+            <a href="" style="text-decoration: none;">Size Guides</a>
+            <a href="" style="text-decoration: none;">Return & Refund Policy</a>
+            <a href="" style="text-decoration: none;">Terms Of Service</a>
+            <a href="" style="text-decoration: none;">Privacy Policy</a>
+        </div>
     </div>
     <script src="form.js"></script>
     <script type="module" src="signup.js" defer></script>

@@ -23,13 +23,14 @@ submit.addEventListener('click', function (event){
 
     const email = document.getElementById('email').value;
     const password = document.getElementById('pass').value;
+    const closebtn = document.getElementById('close-btn');
 
     signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
     // Signed in 
     const user = userCredential.user;
-    alert('Signed In!')
-    window.location.replace('signedin.html');
+
+    document.getElementById('popup-container').style.display = 'flex'; 
     // ...
     })
     .catch((error) => {
@@ -37,5 +38,12 @@ submit.addEventListener('click', function (event){
     const errorMessage = error.message;
     alert('Incorrect Email or Password!')
     });
+
+    closebtn.addEventListener('click', function (event){ 
+        event.preventDefault()
+
+        document.getElementById('popup-container').style.display = 'none'; 
+        window.open('index.html', '_self');
+    })
 
 });

@@ -1,0 +1,69 @@
+*{  
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+#btn{
+    padding: 12px;
+    color: white;
+    background-color: black;
+    border: 2px solid black;
+    margin-bottom: 12px;
+    cursor: pointer;
+    outline: none;
+}
+#btn:hover{
+    color: black;
+    background-color: white;
+    border: 1px solid tomato;
+    transition: 0.5s ease-in-out;
+}
+#popup-container{
+    background-color: white;
+    height: 420px;
+    width: 420px;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .3);
+}
+#popup-img{
+    height: 240px;
+    width: 240px;
+    background-image: url('assets/double-check.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#popup-container h3{
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 12px;
+}
+#close-btn{
+    margin-top: 12px;
+    padding: 12px;
+    color: white;
+    background-color: black;
+    margin-bottom: 12px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+.dim{
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .3);
+}
